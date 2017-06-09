@@ -1,5 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [one](one.md)
+* [cmd-mysql](one.md)
+* [amd&cmd](amdandcmd.md)
 

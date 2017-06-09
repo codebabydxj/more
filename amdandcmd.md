@@ -2,11 +2,9 @@
 
 > 模块化开发和编程
 
-#### AMD
+#### AMD——requery.js
 
 > 依赖前置，提前执行，2.0之后可以依赖就近
-
-##### require.js
 
 ```
 define(["a","b"],function(a,b){//函数体})

@@ -7,10 +7,11 @@
 > 依赖前置，提前执行，2.0之后可以依赖就近
 
 ```
+// html引入
+<script data-main="index.js" src="require.js" async="async" defer></script>
+// js中使用
 define(["a","b"],function(a,b){//函数体})
 ```
-
-
 
 #### CMD
 

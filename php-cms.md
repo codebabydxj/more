@@ -1,10 +1,10 @@
-整站的逻辑
+# 整站的逻辑
 
 首页=》导航 =》列表页=》详情页面
 
 首页=》一级导航=》二级导航=》列表页=》详情页面
 
-静态地址
+# 静态地址
 
 {CSS\_PATH} 默认css地址
 
@@ -12,9 +12,7 @@
 
 {IMG\_PATH} 默认IMG地址
 
-主页做法步骤
-
-
+# 主页做法步骤
 
 第一步按照网站的特点，需要将网站公共相同的部分我们可以直接拿出来作为单独部分 例如：footer header
 
@@ -68,17 +66,13 @@ $v 每次循环的时候，保存每一行数据
 
 {/if}
 
-上上级父元素
-
-
+# 上上级父元素
 
 上上级栏目名称 {CATEGORYS\[CATEGORYS\[$CAT\[parentid\]\]\[parentid\]\]\[catname\]}
 
 上上级栏目链接 {CATEGORYS\[CATEGORYS\[$CAT\[parentid\]\]\[parentid\]\]\[url\]}
 
-取父级栏目的信息
-
-
+# 取父级栏目的信息
 
 栏目名字 {CATEGORYS\[top\_parentid\]\[catname\]}
 
@@ -90,9 +84,7 @@ $v 每次循环的时候，保存每一行数据
 
 只需要改动XXX {CATEGORYS\[top\_parentid\]\[XXX\]}
 
-当前栏目的上级栏目id
-
-
+# 当前栏目的上级栏目id
 
 {$CAT\[parentid\]}
 
@@ -102,9 +94,7 @@ $v 每次循环的时候，保存每一行数据
 
 {CATEGORYS\[top\_parentid\]\[catid\]}
 
-当前栏目信息
-
-
+# 当前栏目信息
 
 {$catname}
 
@@ -124,27 +114,19 @@ $v 每次循环的时候，保存每一行数据
 
 {$CATEGORYS\[某一个id\]\[字段\]} 获取某一个栏目的某个信息
 
-首页
-
-
+# 首页
 
 {siteurl\($siteid\)}
 
-在非show页面里面去取文章的内容的时候
-
-
+# 在非show页面里面去取文章的内容的时候
 
 需要添加moreinfo="1"
 
-非show页面的时间格式化
-
-
+# 非show页面的时间格式化
 
 {date\('Y-m-d H:i:s',$r\[inputtime\]\)}
 
-在show页面去取内容的时候
-
-
+# 在show页面去取内容的时候
 
 文章标题 {$title}
 

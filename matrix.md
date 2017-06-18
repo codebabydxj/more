@@ -49,5 +49,11 @@ cosVal = Math.cos(this.value * Math.PI / 180);
 sinVal = Math.sin(this.value * Math.PI / 180);
 ```
 
+> eg:旋转30度
+
+```
+transform:matrix(0.866025,0.500000,-0.500000,0.866025,0,0);
+```
+
 
 

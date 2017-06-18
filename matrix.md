@@ -47,12 +47,29 @@ transform:matrix(3,0,0,2,0,0);
 ```
 cosVal = Math.cos(this.value * Math.PI / 180);
 sinVal = Math.sin(this.value * Math.PI / 180);
+matrix(cosθ,sinθ,-sinθ,cosθ,0,0);
 ```
 
 > eg:旋转30度
 
 ```
 transform:matrix(0.866025,0.500000,-0.500000,0.866025,0,0);
+```
+
+### 倾斜（skew）
+
+> 使用tan\(\)，同旋转原理一样
+
+```
+tanValY = Math.tan(eleRangeY.value * Math.PI / 180);
+tanValX = Math.tan(eleRangeX.value * Math.PI / 180);
+matrix(1,tan(θy),tan(θx),1,0,0);
+```
+
+> eg:倾斜30度
+
+```
+transform:matrix(1,0.000000,0.839100,1,0,0);
 ```
 
 

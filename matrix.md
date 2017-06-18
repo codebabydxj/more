@@ -44,5 +44,10 @@ transform:matrix(3,0,0,2,0,0);
 * x\*cos\(\)-y\*sin\(\)
 * x\*sin\(\)+y\*cos\(\)
 
+```
+cosVal = Math.cos(this.value * Math.PI / 180);
+sinVal = Math.sin(this.value * Math.PI / 180);
+```
+
 
 

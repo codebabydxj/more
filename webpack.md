@@ -33,5 +33,21 @@ npm install --save-dev webpack
 webpack {entry file/入口文件} {destination for bundled file/存放bundle.js的地方}
 ```
 
+#### 扩展
 
+在package.json中写入：
+
+```
+"scripts": {
+    "start": "webpack app/main.js public/bundle.js" //配置的地方就是这里啦，相当于把npm的start命令指向webpack命令
+  },
+```
+
+相当于把这一行命令托付给start，只需要执行
+
+```
+npm start
+```
+
+就可以执行这一串代码。
 

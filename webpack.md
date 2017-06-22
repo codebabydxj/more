@@ -17,7 +17,7 @@
 npm init;
 ```
 
-> 必须全局安装才能执行webpack命令，否则找不到
+> 必须全局安装才能执行webpack，否则找不到指定的命令。
 
 ```
 //全局安装
@@ -26,14 +26,14 @@ npm install -g webpack
 npm install --save-dev webpack
 ```
 
-> 执行webpack命令
+> 执行webpack命令，后两个参数第一个是要处理的文件，第二个是处理之后的文件。
 
 ```
 在接管文件夹下执行
 webpack {entry file/入口文件} {destination for bundled file/存放bundle.js的地方}
 ```
 
-#### 扩展
+> > 另外
 
 在package.json中写入：
 

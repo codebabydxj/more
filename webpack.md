@@ -28,7 +28,7 @@ npm install --save-dev webpack
 
 ### 执行webpack
 
-#### 命令行执行
+#### 1. 命令行执行
 
 ```
 // 局部
@@ -37,6 +37,32 @@ npm install --save-dev webpack
 webpack app/index.js dist/bundle.js
 // webpack命令 入口 出口
 ```
+
+#### 2. 配置文件执行
+
+根目录下创建webpack.config.js文件，规范代码如下：
+
+```
+var path = require('path');
+
+module.exports = {
+  // 入口
+  entry: './app/index.js',
+  // 出口
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
+```
+
+通过命令行执行此文件即可。
+
+```
+webpack --config webpack.config.js
+```
+
+#### 3. 设置快捷方式
 
 
 

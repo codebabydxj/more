@@ -64,5 +64,17 @@ webpack --config webpack.config.js
 
 #### 3. 设置快捷方式
 
+在package.json文件的scripts中加入快捷方式：
+
+```
+"build": "webpack"
+```
+
+执行如下命令即可。
+
+```
+npm build
+```
+
 
 

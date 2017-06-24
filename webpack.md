@@ -67,7 +67,7 @@ webpack --config webpack.config.js
 在package.json文件的scripts中加入快捷方式：
 
 ```
-"build": "webpack"
+"build": "webpackapp/index.js dist/bundle.js"
 ```
 
 执行如下命令即可。

@@ -26,32 +26,17 @@ npm install -g webpack
 npm install --save-dev webpack
 ```
 
-> 执行webpack命令，后两个参数第一个是要处理的文件，第二个是处理之后的文件。
+### 执行webpack
+
+#### 命令行执行
 
 ```
-在接管文件夹下执行
-webpack {entry file/入口文件} {destination for bundled file/存放bundle.js的地方}
+// 局部
+.\node_modules\.bin\webpack app/index.js dist/bundle.js
+// 全局
+webpack app/index.js dist/bundle.js
+// webpack命令 入口 出口
 ```
-
-> > 另外
-
-在package.json中写入：
-
-```
-"scripts": {
-    "start": "webpack app/main.js public/bundle.js" //配置的地方就是这里啦，相当于把npm的start命令指向webpack命令
-  },
-```
-
-相当于把这一行命令托付给start，只需要执行
-
-```
-npm start
-```
-
-就可以执行这一串代码。
-
-### 创建本地服务器，自动化构建
 
 
 

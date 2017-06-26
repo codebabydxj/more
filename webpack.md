@@ -76,5 +76,13 @@ webpack --config webpack.config.js
 npm build
 ```
 
+### 分离css
+
+引入css文件
+
+```
+import 'bootstrap/dist/css/bootstrap.css';
+```
+
 
 

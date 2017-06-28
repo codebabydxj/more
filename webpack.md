@@ -181,5 +181,17 @@ require('./index.less');
 webpack --config webpack.config.js
 ```
 
+### url-loader
+
+### file-loader
+
+### json-loader
+
+### raw-loader
+
+### babel-loader
+
+> 处理js文件
+
 
 

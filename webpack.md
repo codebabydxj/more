@@ -76,12 +76,79 @@ webpack --config webpack.config.js
 npm build
 ```
 
-### 分离css
+### css-loader，style-loader使用
 
-引入css文件
+* 安装css-loader,style-loader
 
 ```
-import 'bootstrap/dist/css/bootstrap.css';
+npm install css-loader,style-loader --save-dev
+```
+
+> 不能重复安装
+
+* 创建几个文件，下列为几个文件的相对路径
+
+```
+- index.html
+- main.js
+- app.css
+- package.json
+- webpack.config.js  // 配置文件，自己编写
+```
+
+* 各个文件分别写入各自的代码块。
+
+```
+/* index.html */
+
+<html>
+  <head>
+    <script type="text/javascript" src="bundle.js"></script>
+  </head>
+  <body>
+    <div id="test">Hello World</div>
+  </body>
+</html>
+
+
+/* main.js */
+
+// 引入app.css
+require('./app.css');
+
+
+/* app.css */
+
+#test{
+  background:red;
+  width:100px;
+  height:100px;
+  color:blue;
+}
+
+
+/* webpack.config.js */
+
+module.exports = {
+  // 入口文件
+  entry: './main.js',
+  // 出口文件
+  output: {
+    filename: 'bundle.js'
+  },
+  // 处理
+  module: {
+    loaders:[
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+    ]
+  }
+};
+```
+
+* 最后执行配置文件，就成功了。
+
+```
+webpack --config webpack.config.js
 ```
 
 

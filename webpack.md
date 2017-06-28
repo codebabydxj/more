@@ -155,7 +155,7 @@ webpack --config webpack.config.js
 
 ### less-loader
 
-* 安装less-loader
+* 安装less-loader 
 
 ```
 npm install less --save-dev

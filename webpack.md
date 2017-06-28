@@ -183,11 +183,19 @@ webpack --config webpack.config.js
 
 ### url-loader
 
+> 使用方式同上
+
 ### file-loader
+
+> 使用方式同上
 
 ### json-loader
 
+> 使用方式同上
+
 ### raw-loader
+
+> 使用方式同上
 
 ### babel-loader
 

@@ -81,7 +81,9 @@ npm build
 * 安装css-loader,style-loader
 
 ```
-npm install css-loader,style-loader --save-dev
+// 尝试过同时安装，会报错
+npm install css-loader --save-dev
+npm install style-loader --save-dev
 ```
 
 > 不能重复安装
@@ -149,6 +151,15 @@ module.exports = {
 
 ```
 webpack --config webpack.config.js
+```
+
+### less-loader
+
+* 安装less-loader
+
+```
+npm install less --save-dev
+npm install less-loader --save-dev
 ```
 
 

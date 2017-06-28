@@ -162,5 +162,24 @@ npm install less --save-dev
 npm install less-loader --save-dev
 ```
 
+* 创建index.less文件。
+* 在webpack.config.js中改变处理。
+
+```
+{test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+```
+
+* 在main.js中引入.less文件即可。
+
+```
+require('./index.less');
+```
+
+* 执行配置文件，完成操作。
+
+```
+webpack --config webpack.config.js
+```
+
 
 

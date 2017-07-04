@@ -1,6 +1,6 @@
 # webpack
 
-> 模块化编程工具
+> 模块化编程工具，通过npm安装
 
 ## webpack和grunt、gulp有什么区别？
 
